@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholeworthsgrocery.FXMLController">
+   <children>
+      <Label layoutX="193.0" layoutY="25.0" text="WholeWorths Grocery Items" textAlignment="CENTER" textFill="#d43737">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="47.0" text="Eggs:" textFill="#c43c3c">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="71.0" text="Qty:" />
+      <Label layoutX="286.0" layoutY="71.0" text="Subtotal:" />
+      <Label layoutX="26.0" layoutY="106.0" text="Milk:" textFill="#e43434">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="133.0" text="Qty:" />
+      <Label layoutX="286.0" layoutY="133.0" text="Subtotal:" />
+      <Label layoutX="26.0" layoutY="167.0" text="Bread:" textFill="#e43434">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="200.0" text="Qty:" />
+      <Label layoutX="286.0" layoutY="200.0" text="Subtotal:" />
+      <TextField fx:id="eggQty" layoutX="64.0" layoutY="67.0" />
+      <TextField fx:id="eggSubtotal" editable="false" layoutX="382.0" layoutY="67.0" />
+      <TextField fx:id="milkQty" layoutX="73.0" layoutY="129.0" />
+      <TextField fx:id="milkSubtotal" editable="false" layoutX="382.0" layoutY="129.0" />
+      <TextField fx:id="breadQty" layoutX="73.0" layoutY="196.0" />
+      <TextField fx:id="breadSubtotal" editable="false" layoutX="382.0" layoutY="196.0" />
+      <Button fx:id="buttonCalculate" layoutX="222.0" layoutY="265.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="81.0" text="Calculate" textFill="#c43232">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="128.0" layoutY="317.0" text="Total:" textFill="#e43434">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="317.0" text="Subtotal:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="totalBill" editable="false" layoutX="259.0" layoutY="313.0" />
+   </children>
+</Pane>
